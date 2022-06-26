@@ -1,0 +1,10 @@
+root
+db
+root
+
+pip install Flask-MySQLdb
+
+engine = create_engine('mssql+pymssql://scott:tiger@hostname:port/dbname')
+
+engine = create_engine("mysql+mysqldb://root:root@127.0.0.1:3306/mushroom_db",
+                            encoding='latin1', echo=True)
